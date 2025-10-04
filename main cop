@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string nama, programStudi, kampus, hobi;
+    int a, b;
+
+    // Input data diri
+    cout << "Masukkan Nama: ";
+    getline(cin, nama);
+    cout << "Masukkan Program Studi: ";
+    getline(cin, programStudi);
+    cout << "Masukkan Nama Kampus: ";
+    getline(cin, kampus);
+    cout << "Masukkan Hobi: ";
+    getline(cin, hobi);
+
+    // Tampilkan data
+    cout << "\nHalo, nama saya adalah " << nama << endl;
+    cout << "Saya kuliah pada jurusan " << programStudi << " di " << kampus << endl;
+    cout << "Saya memiliki hobi " << hobi << endl;
+
+    // Input angka
+    cout << "\nMasukkan bilangan pertama: ";
+    cin >> a;
+    cout << "Masukkan bilangan kedua: ";
+    cin >> b;
+
+    // Operasi hitung (hasil tidak boleh minus → gunakan abs)
+    cout << "\nHasil Operasi Matematika:\n";
+    cout << "Penambahan: " << a + b << endl;
+    cout << "Perkalian: " << a * b << endl;
+
+    if (b != 0) {
+        cout << "Pembagian: " << abs(a / b) << endl;
+        cout << "Modulus: " << abs(a % b) << endl;
+    } else {
+        cout << "Pembagian dan modulus tidak bisa dilakukan karena pembagi nol." << endl;
+    }
+
+    return 0;
+}
