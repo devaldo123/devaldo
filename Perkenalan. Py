@@ -1,0 +1,9 @@
+# Program Biodata Mahasiswa
+nama = input("Masukkan nama: ")
+program_studi = input("Masukkan program studi: ")
+nama_kampus = input("Masukkan nama kampus: ")
+hobi = input("Masukkan hobi: ")
+
+print("Halo, nama saya adalah", nama)
+print("Saya kuliah pada jurusan", program_studi, "di", nama_kampus)
+print("Saya memiliki hobi", hobi)
